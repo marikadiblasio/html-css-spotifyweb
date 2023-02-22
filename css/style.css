@@ -7,6 +7,14 @@
 html {
     scroll-behavior: smooth;
 }
+li {
+    list-style: none;
+    padding: 15px;
+}
+a {
+    color: var(--light-grey);
+    text-decoration: none;
+}
 .wrapper{
     width: 100%;
     height: 100vh;
@@ -24,9 +32,62 @@ html {
     --light-grey: #c1c1c1;
     --contrast: #adff2f;
 }
+/* Backgrounds and colors */
+.white-txt {
+    color: var(--white);
+}
+/* Text */
+.text-center {
+    text-align: center;
+}
+.up-text {
+    text-transform: uppercase;
+}
+/* .under-l {
+    text-decoration: underline;
+} */
+/* Paddings and margins*/
+.p15 {
+    padding: 15px;
+}
+.p-t10 {
+    padding-top: 10px;
+}
+/* .p-b15{
+    padding-bottom: 15px;
+} */
+.p-b10{
+    padding-bottom: 10px;
+}
+.m-r35{
+    margin-right: 35px;
+}
+.m-r--15 {
+    margin-right: -15px;
+}
+.m-l--15 {
+    margin-left: -15px;
+}
+/* buttons */
+.btn {
+    padding: 1rem 2rem;
+    display: inline-block;
+    border-radius: 2rem;
+    border: 1px solid var(--white);
+}
 /* flexbox */
 .d-flex {
     display: flex;
+}
+.just-center {
+    justify-content: center;
+}
+.just-end {
+    justify-content: flex-end;
+}
+.align-center {
+    align-items: center;
+    align-content: center;
 }
 /* Main */
 main {
@@ -56,9 +117,57 @@ main {
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
 }
+/* Main section */
+.main-section {
+    margin-top: 80px;
+    padding: 1rem;
+}
+/* nav-section */
+.nav-section li a hr {
+    color: var(--contrast);
+    width: 35%;
+    margin: 3px auto;
+    border: 2px solid var(--contrast);
+    border-radius: 3px;
+    background-color: var(--contrast);
+    opacity: 0;
+}
+/* Section-container */
+.main-section .col {
+    width: calc(100% / 6);
+}
+.col img {
+    width: 100%;
+    display: block;
+}
+.col h4 {
+    font-size: .8rem;
+}
+.container h6 {
+    font-weight: 400;
+    color: var(--light-grey);
+}
+/* Rounded img */
+.b-radius50 {
+    border-radius: 50%;
+    overflow: hidden;
+}
+.b-radius50 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 /* Playbar */
 #playbar {
     width:100%;
     height: 90px;
     background-color: var(--dark-gray);
+}
+
+/* Hover */
+.btn:hover {
+    transform: scale(1.13);
+}
+.nav-section li:hover hr {
+    opacity: 1;
 }
