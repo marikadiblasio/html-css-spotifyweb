@@ -14,6 +14,7 @@ li {
 a {
     color: var(--light-grey);
     text-decoration: none;
+    transition: all .4s;
 }
 .wrapper{
     width: 100%;
@@ -23,6 +24,9 @@ a {
     /* overflow: hidden; da scommentare alla fine */
 }
 /* Utility */
+.p-relative {
+    position: relative;
+}
 /* Color styles */
 :root {
     --dark-color: #141922;
@@ -134,6 +138,7 @@ main {
     border-radius: 3px;
     background-color: var(--contrast);
     opacity: 0;
+    transition: all .4s;
 }
 /* Section-container */
 .main-section .col {
@@ -142,6 +147,17 @@ main {
 .col img {
     width: 100%;
     display: block;
+    transition: all .5s;
+
+}
+.p-relative i, .p-relative.b-radius50 i {
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    visibility: hidden;
+    transition: all .5s;
 }
 .col h4 {
     font-size: .8rem;
@@ -167,6 +183,7 @@ main {
     background-color: var(--dark-gray);
 }
 
+
 /* Hover */
 .btn:hover {
     transform: scale(1.13);
@@ -174,6 +191,17 @@ main {
 .nav-section li:hover hr {
     opacity: 1;
 }
+li:hover a{
+    color: var(--white);
+}
+.col img:hover {
+    filter: grayscale(25%);
+}
+.p-relative:hover i, .p-relative.b-radius50:hover i {
+    visibility: visible;
+}
+
+
 
 /* Responsive */
 
