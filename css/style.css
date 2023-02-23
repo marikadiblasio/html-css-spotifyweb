@@ -135,10 +135,13 @@ main {
     min-height: 480px;
     background-color: var(black);
 }
-.main-nav .logo{
+.main-nav .logo, {
     display: block;
     width: 80%;
     margin: 8px 15px;
+}
+.small-logo {
+    display: none;
 }
 .main-nav li {
     border-left: 3px hidden var(--contrast);
@@ -309,6 +312,15 @@ li:hover a{
     .main-nav {
         width: 70px;
 }
+    .main-nav>div>ul>li * :not(.persistent), .d-none, .d-none.logo {
+        display: none;
+    }
+    .main-nav .small-logo {
+        display: block;
+        width: 2.5rem;
+        margin: 8px auto;
+        filter: invert(0.1);
+    }
     /* Main section */
     .main-content {
        width: calc(100% - 70px);
