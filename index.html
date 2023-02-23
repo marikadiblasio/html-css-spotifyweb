@@ -19,7 +19,7 @@
                     <img src="./img/logo-small.svg" alt="logo" class="small-logo">
                     <img class="logo d-none" src="./img/logo.svg" alt="logo">
                     <ul class=" persistent grey-txt">
-                        <li>
+                        <li class="active">
                             <a class="d-flex align-center" href="#">
                                 <img class="persistent" src="./img/home.svg" alt="Home">
                                 <h4 class="font-500">Home</h4>
@@ -65,7 +65,7 @@
                 </ul>
                 <hr class="d-none">
                 <div class="d-flex p15 white-txt align-center">
-                    <div class="b-radius50 persistent bg-grey w-medium"><img class="w-small persistent" src="./img/profile.svg" alt="profile"></div>
+                    <div class="persistent bg-grey w-medium"><img class="w-medium persistent" src="./img/profile.svg" alt="profile"></div>
                     <h3 class="d-none">John Doe</h3>
                 </div>
             </div>
@@ -77,7 +77,7 @@
                 <div class="main-section">
                     <nav class="nav-section just-center  d-flex">
                         <ul class="d-flex f-wrap up-text">
-                            <li class="p15"><a href="#">in evidenza</a><hr></li>
+                            <li class="p15 active"><a href="#">in evidenza</a><hr></li>
                             <li class="p15"><a href="#">podcast</a><hr></li>
                             <li class="p15"><a href="#">classifiche</a><hr></li>
                             <li class="p15"><a href="#">generi e mood</a><hr></li>
@@ -90,34 +90,46 @@
                         <h3 class="p-b10">Recently played</h3>
                         <div class="row d-flex f-wrap m-l--15 m-r--15">
                             <div class="col p15">
-                                <div class="p-relative"><img src="./img/metal_lifting.jpg" alt="Heavy-Metal cover"><i class="fa-regular fa-circle-play"></i></div>
-                                <h4 class="white-txt p-t10 text-center">Heavy Metal</h4>
-                                <h6 class="white-txt p-t10 text-center">Subtitle</h6>
+                                <div class="cover">
+                                    <div class="p-relative"><img src="./img/metal_lifting.jpg" alt="Heavy-Metal cover"></div>
+                                    <h4 class="white-txt p-t10 text-center">Heavy Metal</h4>
+                                    <h6 class="white-txt p-t10 text-center">Subtitle</h6>
+                                </div>
                             </div>
                             <div class="col p15">
-                                <div class="p-relative"><img src="./img/stranger.jpeg" alt="Stranger Things cover"><i class="fa-regular fa-circle-play"></i></div>
-                                <h4 class="white-txt p-t10 text-center">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
-                                <h6 class="white-txt p-t10 text-center">Kyle Dixon & Michael Stein</h6>
+                                <div class="cover">
+                                    <div class="p-relative"><img src="./img/stranger.jpeg" alt="Stranger Things cover"></div>
+                                    <h4 class="white-txt p-t10 text-center">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
+                                    <h6 class="white-txt p-t10 text-center">Kyle Dixon & Michael Stein</h6>
+                                </div>
                             </div>
                             <div class="col p15">
-                                <div class="p-relative"><img src="./img/aquietplace.jpeg" alt="A quiet place cover"><i class="fa-regular fa-circle-play"></i></div>
-                                <h4 class="white-txt p-t10 text-center">A quiet place</h4>
-                                <h6 class="white-txt p-t10 text-center">Subtitle</h6>
+                                <div class="cover">
+                                    <div class="p-relative"><img src="./img/aquietplace.jpeg" alt="A quiet place cover"></div>
+                                    <h4 class="white-txt p-t10 text-center">A quiet place</h4>
+                                    <h6 class="white-txt p-t10 text-center">Subtitle</h6>
+                                </div>
                             </div>
                             <div class="col p15">
-                                <div class="p-relative"><img src="./img/split.jpeg" alt="Split cover"><i class="fa-regular fa-circle-play"></i></div>
-                                <h4 class="white-txt p-t10 text-center">Split</h4>
-                                <h6 class="white-txt p-t10 text-center">Subtitle</h6>
+                                <div class="cover">
+                                        <div class="p-relative"><img src="./img/split.jpeg" alt="Split cover"></div>
+                                        <h4 class="white-txt p-t10 text-center">Split</h4>
+                                        <h6 class="white-txt p-t10 text-center">Subtitle</h6>
+                                </div>
                             </div>
                             <div class="col p15">
-                                <div class="p-relative"><img src="./img/cure.jpeg" alt="A cure for wellness cover"><i class="fa-regular fa-circle-play"></i></div>
-                                <h4 class="white-txt p-t10 text-center">A cure for wellness</h4>
-                                <h6 class="white-txt p-t10 text-center">Subtitle</h6>
+                                <div class="cover">
+                                    <div class="p-relative"><img src="./img/cure.jpeg" alt="A cure for wellness cover"></div>
+                                    <h4 class="white-txt p-t10 text-center">A cure for wellness</h4>
+                                    <h6 class="white-txt p-t10 text-center">Subtitle</h6>
+                                </div>
                             </div>
                             <div class="col p15">
-                                <div class="p-relative"><img src="./img/sinister.jpeg" alt="Sinister cover"><i class="fa-regular fa-circle-play"></i></div>
-                                <h4 class="white-txt p-t10 text-center">Sinister</h4>
-                                <h6 class="white-txt p-t10 text-center">Subtitle</h6>
+                                <div class="cover">
+                                    <div class="p-relative"><img src="./img/sinister.jpeg" alt="Sinister cover"></div>
+                                    <h4 class="white-txt p-t10 text-center">Sinister</h4>
+                                    <h6 class="white-txt p-t10 text-center">Subtitle</h6>
+                                </div>
                             </div>
                         </div>
                     </section>
@@ -127,12 +139,16 @@
                         <h6 class="p-b10">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti</h6>
                         <div class="row d-flex f-wrap m-l--15 m-r--15">
                             <div class="col p15">
-                                <div class="p-relative"><img src="./img/radar.jpeg" alt="Release radar cover"><i class="fa-regular fa-circle-play"></i></div>
-                                <h4 class="white-txt p-t10 text-center">Release Radar</h4>
+                                <div class="cover">
+                                    <div class="p-relative"><img src="./img/radar.jpeg" alt="Release radar cover"></div>
+                                    <h4 class="white-txt p-t10 text-center">Release Radar</h4>
+                                </div>
                             </div>
                             <div class="col p15">
-                                <div class="p-relative"><img src="./img/mixdaily.jpeg" alt="Il tuo daily mix cover"><i class="fa-regular fa-circle-play"></i></div>
-                                <h4 class="white-txt p-t10 text-center">Daily Mix 1</h4>
+                                <div class="cover">
+                                    <div class="p-relative"><img src="./img/mixdaily.jpeg" alt="Il tuo daily mix cover"></div>
+                                    <h4 class="white-txt p-t10 text-center">Daily Mix 1</h4>
+                               </div> 
                             </div>
                         </div>
                     </section>
@@ -142,23 +158,68 @@
                         <h6 class="p-b10">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti</h6>
                         <div class="row d-flex f-wrap m-l--15 m-r--15">
                             <div class="col p15">
-                                <div class="b-radius50 p-relative">
-                                    <img src="./img/youg.jpeg" alt="Lana del Rey cover"><i class="fa-regular fa-circle-play"></i>
+                                <div class="cover">
+                                    <div class="b-radius50 p-relative">
+                                        <img src="./img/youg.jpeg" alt="Lana del Rey cover">
+                                    </div>
+                                    <h4 class="white-txt p-t10 text-center">Lana del Rey</h4>
                                 </div>
-                                <h4 class="white-txt p-t10 text-center">Lana del Rey</h4>
-                            </div>
+                           </div>
                             <div class="col p15">
-                                <div class="b-radius50 p-relative">
-                                    <img src="./img/einaudi.jpeg" alt="Ludovico Einaudi cover"><i class="fa-regular fa-circle-play"></i>
+                                <div class="cover">
+                                    <div class="b-radius50 p-relative">
+                                        <img src="./img/einaudi.jpeg" alt="Ludovico Einaudi cover">
+                                    </div>
+                                    <h4 class="white-txt p-t10 text-center">Ludovico Einaudi</h4>
                                 </div>
-                                <h4 class="white-txt p-t10 text-center">Ludovico Einaudi</h4>
                             </div>
                         </div>
                     </section>
                 </div>
             </div>
         </main>
-        <div id="playbar"></div>
+        <div id="playbar" class="d-flex just-bet align-center">
+            <div class="album just-bet d-flex align-center">
+                <div class="just-bet d-flex align-center">
+                    <div class="playing-cover p15">
+                        <img src="./img/sinister.jpeg" alt="Playing album cover">
+                    </div>
+                    <div class="playing-title">
+                        <h5 class="white-txt">Sinister</h5>
+                        <h6 class="grey-txt">Brano</h6>
+                        <h6 class="grey-txt">Nome</h6>
+                    </div>
+                </div>
+                <div class="grey-txt p15">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-sharp fa-regular fa-folder"></i>
+                </div>
+            </div>
+            <div class="control d-flex col-now align-center">
+                <div class="white-txt d-flex just-bet p-b10">
+                    <i class="fa-solid scale fa-shuffle"></i>
+                    <i class="fa-solid scale fa-backward-step"></i>
+                    <i class="fa-sharp scale fa-regular fa-circle-play"></i>
+                    <i class="fa-solid scale fa-forward-step"></i>
+                    <i class="fa-solid scale fa-rotate-right"></i>
+                </div>
+                <div class="white-txt">
+                    cip
+                    <!-- MISSING BAR!!!!!!!!!!!!!!!!!!!!!!! -->
+                </div>
+            </div>
+            <div class="vol grey-txt d-flex align-center">
+                <div>
+                    <i class="fa-solid fa-list-ul"></i>
+                    <i class="fa-solid fa-display"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <div class="white-txt">
+                    cip
+                    <!-- MISSING BAR!!!!!!!!!!!!!!!!!!!!!!! -->
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
