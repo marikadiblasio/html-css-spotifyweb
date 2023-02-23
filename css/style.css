@@ -140,7 +140,7 @@ main {
     min-height: 480px;
     background-color: var(black);
 }
-.main-nav .logo, {
+.main-nav .logo {
     display: block;
     width: 80%;
     margin: 8px 15px;
@@ -302,6 +302,7 @@ img.w-medium {
 .control .white-txt i {
     font-size: 2rem;
     padding-left: 15px;
+    cursor: pointer;
 }
 .control span {
     font-weight: 600;
@@ -323,6 +324,7 @@ img.w-medium {
     background-size: 20% 100%;
     background-repeat: no-repeat;
     transition: opacity .3s;
+    cursor: pointer;
 }
 #playbar .slider.small-slider {
     width: 80px;
@@ -426,6 +428,35 @@ li:hover a, .main-nav li.active a, #playbar i:hover, #playbar div.under-l:hover 
    #playbar .control .slidecontainer .slider {
     width: 100px;
     }
+    #playbar .lay {
+        position: relative;
+    }
+    #playbar .lay:hover span.d-none {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+        background-color: var(--dark-grey);
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+    }
+    #playbar .lay:hover div.d-none {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        position: absolute;
+        bottom: 60px;
+        left: 0;
+        background-color: var(--dark-grey);
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+    }
 }
 
 /* to 400 */
@@ -441,13 +472,15 @@ li:hover a, .main-nav li.active a, #playbar i:hover, #playbar div.under-l:hover 
    .slider.small-slider {
     display: none;
    }
+   #playbar .lay:hover .slider.small-slider {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row nowrap;
+        position: absolute;
+        bottom: 45px;
+        left: 0;
+        width: 70px;
+        height: 4px;
+   }
 }
-
-
-/* 
-// PLAYER //
-<i class="fa-solid fa-shuffle"></i>
-<i class="fa-solid fa-backward-step"></i>
-<i class="fa-sharp fa-regular fa-circle-play"></i>
-<i class="fa-solid fa-forward-step"></i>
-<i class="fa-solid fa-rotate-right"></i> */
