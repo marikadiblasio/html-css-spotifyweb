@@ -184,13 +184,15 @@
                     <div class="playing-cover p15">
                         <img src="./img/sinister.jpeg" alt="Playing album cover">
                     </div>
-                    <div class="playing-title">
+                    <div class="playing-title d-none">
                         <h5 class="white-txt">Sinister</h5>
-                        <h6 class="grey-txt">Brano</h6>
-                        <h6 class="grey-txt">Nome</h6>
+                        <div class="under-l">
+                            <span class="grey-txt">Brano</span>
+                            <span class="grey-txt">Nome</span>
+                        </div>
                     </div>
                 </div>
-                <div class="grey-txt p15">
+                <div class="grey-txt d-none p15">
                     <i class="fa-regular fa-heart"></i>
                     <i class="fa-sharp fa-regular fa-folder"></i>
                 </div>
@@ -203,20 +205,26 @@
                     <i class="fa-solid scale fa-forward-step"></i>
                     <i class="fa-solid scale fa-rotate-right"></i>
                 </div>
-                <div class="white-txt">
-                    cip
-                    <!-- MISSING BAR!!!!!!!!!!!!!!!!!!!!!!! -->
+                <div class="white-txt d-flex align-center">
+                    <div><span>0:25</span></div>
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="20" class="slider">
+                    </div>
+                    <div><span>4:35</span></div>
                 </div>
             </div>
             <div class="vol grey-txt d-flex align-center">
-                <div>
+                <div class="p15">
                     <i class="fa-solid fa-list-ul"></i>
-                    <i class="fa-solid fa-display"></i>
-                    <i class="fa-solid fa-volume-high"></i>
+                    <span class="d-none">
+                        <i class="fa-solid  fa-display"></i>
+                        <i class="fa-solid fa-volume-high"></i>
+                    </span>
                 </div>
                 <div class="white-txt">
-                    cip
-                    <!-- MISSING BAR!!!!!!!!!!!!!!!!!!!!!!! -->
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="20" class="slider small-slider">
+                    </div>
                 </div>
             </div>
         </div>
