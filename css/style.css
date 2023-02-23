@@ -381,12 +381,18 @@ li:hover a, .main-nav li.active a, #playbar i:hover, #playbar div.under-l:hover 
 
 
 /* Responsive */
-
+/* to 1200px */
+@media screen and (max-width: 1200px) {
+     /* Main section */
+     .main-section .col {
+        width: calc(100% / 4);
+    }
+}
 /* to 992 */
 @media screen and (max-width: 992px) {
     /* Main section */
     .main-section .col {
-        width: calc(100% / 4);
+        width: calc(100% / 3);
     }
 }
 
@@ -428,10 +434,7 @@ li:hover a, .main-nav li.active a, #playbar i:hover, #playbar div.under-l:hover 
    #playbar .control .slidecontainer .slider {
     width: 100px;
     }
-    #playbar .lay {
-        position: relative;
-    }
-    #playbar .lay:hover span.d-none {
+    #playbar .p-relative:hover span.d-none {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -444,7 +447,7 @@ li:hover a, .main-nav li.active a, #playbar i:hover, #playbar div.under-l:hover 
         height: 80px;
         border-radius: 10px;
     }
-    #playbar .lay:hover div.d-none {
+    #playbar .p-relative:hover div.d-none {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -472,7 +475,7 @@ li:hover a, .main-nav li.active a, #playbar i:hover, #playbar div.under-l:hover 
    .slider.small-slider {
     display: none;
    }
-   #playbar .lay:hover .slider.small-slider {
+   #playbar .p-relative:hover .slider.small-slider {
     display: flex;
         justify-content: center;
         align-items: center;
