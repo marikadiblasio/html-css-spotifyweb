@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body id="page">
+    <div class="wrapper">
+        <main>
+            <nav class="main-nav d-flex col-now just-bet">
+                <div class="h80">
+                    <img src="../img" alt="logo" class="small-logo">
+                    <img class="logo d-none" src="../img/logo.svg" alt="logo">
+                    <ul class=" persistent grey-txt">
+                        <li class="active">
+                            <a class="d-flex align-center" href="#">
+                                <img class="persistent" src="../img/home.svg" alt="Home">
+                                <h4 class="font-500">Home</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex align-center" href="#">
+                                <img class="persistent" src="../img/search.svg" alt="Cerca">
+                                <h4 class="font-500">Cerca</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex align-center" href="#">
+                                <img class="persistent" src="../img/libreria.svg" alt="Libreria">
+                                <h4 class="font-500">Libreria</h4>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="h80">
+                        <h3 class="up-text lightgrey-txt  d-none p8-15">Playlist</h3>
+                        <ul class="grey-txt d-none over-y">
+                            <li>
+                                <a class="d-flex align-center" href="#">
+                                    <i class="fa-solid fa-square-plus"></i>
+                                    <h3>Crea Playlist</h3>
+                                </a>
+                            </li>
+                            <li class="font-600"><a href="#">Nome Playlist</a></li>
+                            <li class="font-600"><a href="#">Nome Playlist</a></li>
+                            <li class="font-600"><a href="#">Nome Playlist</a></li>
+                            <li class="font-600"><a href="#">Nome Playlist</a></li>
+                            <li class="font-600"><a href="#">Nome Playlist</a></li>
+                            <li class="font-600"><a href="#">Nome Playlist</a></li>
+                        </ul>
+                        </div>
+                </div>
+                <div class="min-h114 bg-black">
+                    <ul>
+                        <li>
+                            <a class="d-flex align-center" href="#">
+                                <img class="persistent" src="../img/download.svg" alt="download">
+                                <h4 class="font-500">Installa app</h4>
+                            </a>
+                        </li>
+                    </ul>
+                    <hr class="d-none">
+                    <div class="d-flex p15 white-txt align-center">
+                        <div class="persistent bg-grey w-medium"><img class="w-medium persistent" src="./img/profile.svg" alt="profile"></div>
+                        <h3 class="d-none">John Doe</h3>
+                    </div>
+                </div>
+            </nav> 
+            <div class="main-content">
+                <div id="call-to-action" class="just-end d-flex align-center">
+                    <a href="#" class="btn m-r35 white-txt up-text">Effettua l'upgrade</a>
+                </div>
+                <div class="main-section"></div>
+            </div>
+        </main>
+            <div id="playbar" class="d-flex just-bet align-center">
+                <div class="album just-bet p-relative d-flex align-center">
+                    <div class="just-bet d-flex align-center">
+                        <div class="playing-cover p15">
+                            <img src="../img/sinister.jpeg" alt="Playing album cover">
+                        </div>
+                        <div class="playing-title d-none">
+                            <h5 class="white-txt">Sinister</h5>
+                            <div class="under-l">
+                                <span class="grey-txt">Brano</span>
+                                <span class="grey-txt">Nome</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grey-txt d-none p15">
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#"><i class="fa-sharp fa-regular fa-folder"></i></a>
+                    </div>
+                </div>
+                <div class="control d-flex col-now align-center">
+                    <div class="white-txt d-flex just-bet p-b10">
+                        <i class="fa-solid scale fa-shuffle"></i>
+                        <i class="fa-solid scale fa-backward-step"></i>
+                        <i class="fa-sharp scale fa-regular fa-circle-play"></i>
+                        <i class="fa-solid scale fa-forward-step"></i>
+                        <i class="fa-solid scale fa-rotate-right"></i>
+                    </div>
+                    <div class="white-txt d-flex align-center">
+                        <div><span>0:25</span></div>
+                        <div class="slidecontainer">
+                            <input type="range" min="1" max="100" value="20" class="slider">
+                        </div>
+                        <div><span>4:35</span></div>
+                    </div>
+                </div>
+                <div class="vol p-relative white-txt d-flex align-center">
+                    <div class="p15">
+                        <i class="fa-solid fa-list-ul"></i>
+                        <span class="d-none">
+                            <i class="fa-solid  fa-display"></i>
+                            <i class="fa-solid fa-volume-high"></i>
+                        </span>
+                    </div>
+                    <div class="white-txt">
+                        <div class="slidecontainer small">
+                            <input type="range" min="1" max="100" value="20" class="slider small-slider">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
