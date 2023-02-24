@@ -51,6 +51,7 @@ i {
 .sticky {
     position: sticky;
     top: 80px;
+    background-color: var(--dark-grey);
 }
 /* Utility */
 .p-relative {
@@ -120,6 +121,9 @@ i {
 /* Paddings and margins*/
 .p15 {
     padding: 15px;
+}
+.p-r7 {
+    padding-right: 7px;
 }
 .p8-15{
     padding: 8px 15px;
@@ -287,7 +291,7 @@ img.w-medium {
 .nav-section ul {
     font-weight: 600;
 }
-/* main-section hero */
+/* main-section hero (page playlist)*/
 .hero h1 {
     font-size: 5rem;
 }
@@ -309,6 +313,31 @@ img.w-medium {
     color: green;
     margin-right: 5px;
 
+}
+/* Main section top-container (page playlist */
+.top-container * {
+    font-size: 5rem;
+    margin-left: 1rem;
+}
+.top-container .fa-circle-play{
+    color: #1fdf64;
+    background-color: var(--black);
+    border-radius: 50%;
+}
+/* Main-section page playlist */
+.xs-square {
+    width: 3rem;
+    height: 3rem;
+}
+.xs-f-size {
+    font-size: .8rem;
+}
+.s-f-size {
+    font-size: 1rem;
+}
+.xs-square img {
+    display: block;
+    width: 100%;
 }
 /* Section-container */
 .main-section .col {
