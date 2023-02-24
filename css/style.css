@@ -1,3 +1,7 @@
+/* Temporary */
+.debug {
+    border: 1px solid yellow;
+}
 /* General */
 * {
     margin: 0;
@@ -43,6 +47,11 @@ i {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--white);
 }
+/* Stycky */
+.sticky {
+    position: sticky;
+    top: 80px;
+}
 /* Utility */
 .p-relative {
     position: relative;
@@ -53,6 +62,15 @@ i {
 .scale {
     transform: scale(.8);
     transition: all .3s;
+}
+.w-10{
+    width: 10%;
+}
+.w-30 {
+    width: 30%;
+}
+.w-25 {
+    width: 25%;
 }
 /* Color styles */
 :root {
@@ -117,6 +135,9 @@ i {
 }
 .m-l--15 {
     margin-left: -15px;
+}
+.m-l15{
+    margin-left: 15px;
 }
 /* buttons */
 .btn {
@@ -192,7 +213,7 @@ main {
     letter-spacing: .5rem;
 }
 .main-nav ul.over-y {
-    height: 40vh;
+    height: 60%;
 }
 .min-h114{
     min-height: 114px;
