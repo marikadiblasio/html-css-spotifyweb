@@ -24,7 +24,21 @@ i {
     height: 100vh;
     background-color: var(--black);
     font-family: 'Montserrat', sans-serif;
-    overflow: hidden; da scommentare alla fine
+    overflow: hidden;
+}
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--dark-color);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--light-grey); 
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--white);
 }
 /* Utility */
 .p-relative {
@@ -382,8 +396,6 @@ li:hover a, .main-nav li.active a, #playbar i:hover, #playbar div.under-l:hover 
 #playbar .control .slider:hover {
     background-image: linear-gradient(#adff2f, #adff2f);
 }
-
-
 
 
 /* Responsive */
