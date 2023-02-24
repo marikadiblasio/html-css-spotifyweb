@@ -1,6 +1,6 @@
 /* Temporary */
 .debug {
-    border: 1px solid yellow;
+    border: 1px solid red;
 }
 /* General */
 * {
@@ -47,7 +47,7 @@ i {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--white);
 }
-/* Stycky */
+/* Sticky */
 .sticky {
     position: sticky;
     top: 80px;
@@ -98,6 +98,12 @@ i {
 .bg-black {
     background-color: var(--black);
 }
+.bg-gradient {
+    background: linear-gradient(180deg, #FEFEFE 2.75%, rgba(179, 174, 174, 0.37) 100%), linear-gradient(180deg, #ECE8E8 2.75%, rgba(207, 202, 202, 0.811105) 31.91%, rgba(139, 133, 133, 0.37) 100%), linear-gradient(180deg, #ECE8E8 2%, rgba(139, 133, 133, 0.37) 100%), linear-gradient(180deg, #ECE8E8 0%, rgba(139, 133, 133, 0.37) 100%);
+}
+.bg-transparent {
+    background-color: rgba(0, 0, 0, 0.5);
+}
 /* Text */
 .text-center {
     text-align: center;
@@ -121,9 +127,9 @@ i {
 .p-t10 {
     padding-top: 10px;
 }
-/* .p-b15{
+.p-b15{
     padding-bottom: 15px;
-} */
+}
 .p-b10{
     padding-bottom: 10px;
 }
@@ -138,6 +144,9 @@ i {
 }
 .m-l15{
     margin-left: 15px;
+}
+.m-b--15 {
+    margin-bottom: -15px;
 }
 /* buttons */
 .btn {
@@ -168,6 +177,10 @@ flex-flow: column nowrap;
 .align-center {
     align-items: center;
     align-content: center;
+}
+.align-end{
+    align-items: flex-end;
+    align-content: flex-end;
 }
 /* Main */
 main {
@@ -273,6 +286,29 @@ img.w-medium {
 }
 .nav-section ul {
     font-weight: 600;
+}
+/* main-section hero */
+.hero h1 {
+    font-size: 5rem;
+}
+.f-size1-4 {
+    font-size: 1.4rem;
+}
+.hero .hero-img {
+    filter: drop-shadow(1px 9px 9px rgba(0,0,0,0.5));
+}
+.hero p::before {
+    content: '\f1bc';
+    font-family: "Font Awesome 6 Brands";
+    font-size: 1.4rem;
+    font-weight: 400;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background-color: black;
+    color: green;
+    margin-right: 5px;
+
 }
 /* Section-container */
 .main-section .col {
